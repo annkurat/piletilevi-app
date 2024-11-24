@@ -12,7 +12,7 @@ export default defineNuxtConfig({
 		baseURL: "/piletilevi-app/",
 		buildAssetsDir: "~/assets/css",
 		head: {
-			link: [{ rel: "icon", href: "/favicon.ico" }],
+			link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
 		},
 	},
 });
