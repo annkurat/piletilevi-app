@@ -4,5 +4,5 @@ useHead({
 });
 </script>
 <template>
-	<h2>Back office</h2>
+	<h2 class="h2">Back office</h2>
 </template>

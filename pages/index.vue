@@ -127,7 +127,7 @@ useHead({
 <template>
 	<CommonBreadcrump />
 	<div class="flex justify-between">
-		<h2>Discounts</h2>
+		<h2 class="h2">Discounts</h2>
 		<UiButton @click.prevent="isCreateNewDiscount = true">
 			CREATE NEW DISCOUNT
 		</UiButton>
