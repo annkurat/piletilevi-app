@@ -5,7 +5,7 @@ export default defineNuxtConfig({
 	runtimeConfig: {
 		public: {
 			apiUrl: process.env.API_URL || "",
-			path: process.env.BASE_URL || "/piletilevi-app/",
+			baseUrl: process.env.BASE_URL || "/piletilevi-app/",
 		},
 	},
 	routeRules: {
