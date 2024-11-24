@@ -4,7 +4,7 @@ export default defineNuxtConfig({
 	css: ["~/assets/css/main.css"],
 	runtimeConfig: {
 		public: {
-			apiUrl: process.env.API_URL || "",
+			apiUrl: "https://api.intra.piletilevi.ee",
 		},
 	},
 
