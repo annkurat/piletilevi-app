@@ -8,4 +8,7 @@ export default defineNuxtConfig({
 			baseUrl: process.env.BASE_URL || "/piletilevi-app/",
 		},
 	},
+	routeRules: {
+		"/api/**": { cors: true },
+	},
 });
