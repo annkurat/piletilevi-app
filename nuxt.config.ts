@@ -4,14 +4,8 @@ export default defineNuxtConfig({
 	css: ["~/assets/css/main.css"],
 	runtimeConfig: {
 		public: {
-			apiUrl: process.env.API_URL || "",
+			apiUrl: "https://api.intra.piletilevi.ee",
+			baseURL: process.env.BASE_URL || "/piletilevi-app/",
 		},
-	},
-	routeRules: {
-		"/*": { cors: true },
-	},
-	app: {
-		baseURL: process.env.BASE_URL || "/piletilevi-app/",
-		buildAssetsDir: "~/assets/css",
 	},
 });
