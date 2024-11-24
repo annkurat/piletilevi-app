@@ -10,6 +10,7 @@ const errorMessage = ref("");
 const isLoading = ref(false);
 const selectedDiscountTypes = ref([]);
 const inputValue = ref((route.query.n as string) || "");
+const { apiUrl } = useRuntimeConfig().public;
 
 const filters = computed<{ [key: string]: any }>(() => {
 	return {
@@ -101,7 +102,7 @@ const clear = async () => {
 
 const fetchDiscounts = async () => {
 	isLoading.value = true;
-	await $fetch<Discount[]>("/api/v1/discounts")
+	await $fetch<Discount[]>(`${apiUrl}/v1/discounts`)
 		.then((response) => {
 			discounts.value = response.filter((d) => {
 				return (
